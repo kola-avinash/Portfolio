@@ -34,144 +34,120 @@
     background-color: #DAE8FC;
 }
 
-.about {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    align-items: start;
+
+section.about {
+    display: block;
+    width: 98vw;
+    height: auto;
+    margin: 5vh 0;
+    padding: 5vh 2vw;
 }
 
-.imageinfo {
+.about .imageinfo {
     text-align: center;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1.9fr;
-    grid-template-areas: "project-heading project-heading project-heading"
-        "project1 project2 project3";
-    grid-gap: 20px;
+.about .imageinfo img {
+    max-width: 20vw;
+    height: auto;
+}
+
+section.projects {
+    width: 100vw;
+    padding: 5vh 2vw;
     text-align: center;
 }
 
-.box {
+.projects .project-heading {
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.projects .box {
+    display: inline-block;
     border: 1px solid black;
     box-sizing: border-box;
-    width: 100%;
-
-    margin: 1%;
-    padding: 15px;
-}
-
-.project-heading {
-    grid-area: project-heading;
-}
-
-.project1 {
-    grid-area: project1;
-
-}
-
-.project2 {
-    grid-area: project2;
-}
-
-.project3 {
-    grid-area: project3;
-}
-
-
-.study {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1.9f;
-    grid-template-areas: "studhead certhead"
-        "education certifications";
+    width: 30vw;
+    margin: 2vw 1vw;
+    padding: 2vh;
     text-align: center;
-    grid-gap: 50px;
 }
 
-.study-heading {
-    grid-area: studhead;
+.projects img{
+    max-width: 20vw;
+    height: auto;
 }
 
-.cert-heading {
-    grid-area: certhead;
+
+section.study {
+    width: 95vw;
+    padding: 5vh 2vw;
+    text-align: center;
 }
 
-.education {
-    grid-area: education;
-
+.study-heading
+ {
+    margin-bottom: 2vh;
+    text-align: center;
 }
 
-.certifications {
-    grid-area: certifications;
+.study .education,
+.study .certifications {
+    display: inline-block;
+    width: 45vw;
+    vertical-align: top;
+    text-align: center;
 }
 
 .study img {
-    width: 75px;
-    height: 70px;
+    width: 10vw;
+    height: auto;
 }
 
-.experience {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1.9fr;
-    grid-template-areas: "exphead"
-        "expmain";
+
+section.experience {
+    width: 100vw;
+    padding: 5vh 2vw;
     text-align: center;
-
 }
 
-.exphead {
-    grid-area: exphead;
-}
-
-.expmain {
-    grid-area: expmain;
-}
-
-.experience1 {
-    display: inline;
-}
-
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "blogs contact-form";
+.expmain , .exphead {
+    margin-top: 2vh;
     text-align: center;
-    grid-gap: 50px;
 }
 
-.blogs {
-    grid-area: blogs;
+
+section.contact {
+    width: 100vw;
+    padding: 5vh 2vw;
+    text-align: center;
 }
 
-.contact-form {
-    grid-area: contact-form;
-
-
+.contact .blogs,
+.contact .contact-form {
+    display: inline-block;
+    width: 48vw;
+    vertical-align: top;
+    text-align: center;
 }
 
 .blogs img {
-    height: 70px;
-    width: 70px;
+    height: 10vh;
+    width: 10vh;
 }
 
 
 form {
-    padding: 30px;
+    padding: 3vh;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-
 }
 
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
+    padding: 1vh 2vw;
     border: none;
     border-radius: 4px;
 }
@@ -179,8 +155,8 @@ input[type="submit"] {
 input[type="text"],
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 1vh;
+    margin-bottom: 2vh;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -188,23 +164,24 @@ textarea {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
     font-weight: bold;
 }
 
+
 footer {
     background-color: #F8CECC;
-    display: grid;
-    grid-template-columns: 0.1fr 1.9fr;
-    grid-template-areas: "foothead icons";
-    grid-gap: 1000px;
-
+    width: 94vw;
+    padding: 2vh 2vw;
+    text-align: center;
+    display: block;
 }
 
 footer h2 {
-    grid-area: foothead
+    margin-bottom: 2vh;
 }
 
-.icons {
-    grid-area: icons;
+footer .icons {
+    margin-top: 2vh;
+    text-align: center;
 }
